@@ -1,7 +1,7 @@
 # BruhTerminal.API
 > Made in about an hour i think?
 
-Easy and lightweight TUI library that can be useful for whipping up quick personal utilities or tool
+Easy and lightweight TUI library that can be useful for whipping up quick personal utilities or tools
 ## How to use
 1. Download `BruhTerminal.API.dll` from releases
 2. Add a reference to the DLL
