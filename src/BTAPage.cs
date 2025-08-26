@@ -32,7 +32,7 @@ namespace BruhTerminal.API
             Console.WriteLine();
 
             // Render content
-            string[] contents = Content.Text.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            string[] contents = Content.Text.Split();
             int Line = 1;
             for (int i = 0; i < contents.Length; i++)
             {
@@ -86,3 +86,4 @@ namespace BruhTerminal.API
 
     }
 }
+
