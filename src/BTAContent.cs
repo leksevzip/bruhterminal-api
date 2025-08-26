@@ -3,8 +3,8 @@ namespace BruhTerminal.API
 {
     public class BTAContent
     {
-        public string Text;
-        public uint Split;
+        public string Text { get; set; }
+        public uint Split { get; set; }
 
         public BTAContent(string text, uint split)
         {

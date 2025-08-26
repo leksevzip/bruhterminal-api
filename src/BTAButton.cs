@@ -8,8 +8,8 @@ namespace BruhTerminal.API
 {
     public class BTAButton
     {
-        public int ID;
-        public string Label;
+        public int ID { get; set; }
+        public string Label { get; set; }
         public event Action? Clicked;
 
         public BTAButton(int id, string label)

@@ -9,9 +9,9 @@ namespace BruhTerminal.API
 {
     public class BTAPage
     {
-        public string Header;
-        public BTAContent Content;
-        public BTAButton[] Buttons;
+        public string Header { get; set; }
+        public BTAContent Content { get; set; }
+        public BTAButton[] Buttons { get; set; }
 
         public BTAPage(string header, BTAContent content, BTAButton[] buttons)
         {
@@ -36,9 +36,7 @@ namespace BruhTerminal.API
             int Line = 1;
             for (int i = 0; i < contents.Length; i++)
             {
-                Console.Write($"{contents[i]} ");
-
-                if(Line == Content.Split)
+                if(Line > Content.Split)
                 {
                     Console.Write("\n");
                     Line = 1;
@@ -47,8 +45,10 @@ namespace BruhTerminal.API
                 {
                     Line++;
                 }
+
+                Console.Write($"{contents[i]} ");
             }
-            Console.WriteLine();
+            Console.WriteLine("\n");
 
             // Render buttons
             foreach(BTAButton button in Buttons)
@@ -86,4 +86,3 @@ namespace BruhTerminal.API
 
     }
 }
-
